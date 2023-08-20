@@ -1,0 +1,648 @@
+@import url(https://db.onlinewebfonts.com/c/0a086e32e41c5e5960b26626757f07f3?family=Apercu+Regular);
+@font-face {
+  src: url(fonts/Butler-ExtraBold.woff);
+  font-family: "butler";
+}
+@font-face {
+  src: url(fonts/futurak.ttf);
+  src: url(fonts/FuturaBlack\ BT.ttf);
+  font-family: "futurak", "futurablack";
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "apercu", sans-serif;
+}
+
+/* <!-- Header starts here --> */
+header {
+  background: #000;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.3rem 0;
+  font-family: "apercu", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0.3rem 4rem 0.3rem 4.1rem;
+}
+nav {
+  padding: 0.1rem 0.1rem 0 0;
+}
+.container ul {
+  gap: 2.3rem;
+  display: flex;
+}
+.container li {
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.container a {
+  text-decoration: none;
+  color: #fff;
+}
+.logo img {
+  width: 10.5rem;
+  height: 5rem;
+  padding: 3px 2px 1px 1.2px;
+  margin-right: 2rem;
+}
+.franchise-btn {
+  border: #fff solid 1px;
+  border-radius: 2rem;
+  padding: 1.2rem 0.9rem 1rem 0.9rem;
+  font-size: 0.9rem;
+}
+.order-btn {
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  padding: 1.2rem 0.9rem 1rem 0.9rem;
+  background: #ed1c24;
+  margin-left: -1.3rem;
+  position: relative;
+  font-size: 0.9rem;
+}
+.order a {
+  text-align: center;
+  padding-right: 2.8rem;
+}
+.order i {
+  padding: 0;
+  font-size: 2rem;
+  position: absolute;
+  top: 0.4rem;
+  bottom: 0.5rem;
+  right: 0.3rem;
+}
+/* <!-- Header ends here --> */
+
+/* Image slider */
+.image-container {
+  position: relative;
+  height: 38.5rem;
+}
+.slider-img {
+  position: absolute;
+  height: 38.5rem;
+  width: auto;
+  z-index: -1;
+}
+.slider-img img {
+  height: 38.5rem;
+  width: auto;
+}
+.img-indicators {
+  position: absolute;
+  height: 1%;
+  bottom: 0.1%;
+  width: 100%;
+  text-align: center;
+  z-index: 99;
+}
+.dashes {
+  position: relative;
+  top: -1rem;
+  width: 2rem;
+  height: 0.2rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  cursor: pointer;
+}
+#i1,
+#i2,
+#i3,
+#i4 {
+  display: none;
+}
+#i1:checked ~ #img1,
+#i2:checked ~ #img2,
+#i3:checked ~ #img3,
+#i4:checked ~ #img4 {
+  z-index: 9;
+}
+#i1:checked ~ .img-indicators #dash1,
+#i2:checked ~ .img-indicators #dash2,
+#i3:checked ~ .img-indicators #dash3,
+#i4:checked ~ .img-indicators #dash4 {
+  background-color: #fff;
+}
+/* Image slider */
+
+/* Welcome-section */
+.welcome-salt {
+  background: #000000;
+  height: 33.5rem;
+}
+.welcome-container {
+  color: #fff;
+  padding: 4.4rem 12rem;
+  text-align: center;
+}
+.welcome-container h2 {
+  font-size: 2.5rem;
+  font-weight: 200;
+  line-height: 3.125rem;
+  letter-spacing: -0.00001rem;
+}
+.welcome-container p {
+  font-weight: 200;
+  color: #b2b2b2;
+  font-size: 17px;
+  margin-top: 0.5rem;
+}
+#salt-logo {
+  font-family: "futurak";
+  font-size: 3.25rem;
+  line-height: 3.875rem;
+}
+.welcome-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5rem;
+  gap: 1.8rem;
+}
+.welcome-img {
+  display: grid;
+}
+.welcome-img a {
+  color: #fff;
+  text-decoration: none;
+  border: #4d4d4d solid 1px;
+  border-radius: 2rem;
+  margin-top: 1.5rem;
+  margin-left: 2.5rem;
+  padding: 1rem;
+  align-content: center;
+  width: 11rem;
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+.welcome-img img {
+  width: 15.6rem;
+  height: 8.8rem;
+  background-color: #fff;
+  padding: 1.6rem 1.2rem 1.6rem 1.2rem;
+  border-radius: 0.2rem;
+}
+/* Welcome-section */
+
+/* Restaurant-Franchise-section */
+.restaurant-salt {
+  background: #0f0f0f;
+  height: 82rem;
+  color: #fff;
+  position: relative;
+}
+.restaurant-salt #s-logo-1 {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.restaurant-salt
+  .restaurant-content-container
+  .restaurant-content-box
+  #z-index-img {
+  position: absolute;
+}
+.heading-container {
+  padding: 4.3125rem 12rem 3rem 12rem;
+  text-align: center;
+}
+#salt-logo-2 {
+  font-family: "futurak";
+  font-size: 3.25rem;
+  line-height: 3.875rem;
+}
+.heading-container h2 {
+  font-size: 2.9rem;
+  font-weight: 200;
+  line-height: 3.75rem;
+  font-family: "butler", sans-serif;
+}
+.heading-container p {
+  font-weight: 200;
+  color: #b2b2b2;
+  font-size: 17px;
+  margin-top: 0.5rem;
+}
+.restaurant-content-container {
+  padding: 0 12.875rem 4.4rem 12.8125rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 48px;
+}
+.restaurant-content-box {
+  width: 35.265rem;
+  height: 18.375rem;
+}
+.restaurant-content-container img {
+  height: 18.375rem;
+  width: 33.4375rem;
+}
+.restaurant-content-box h4 {
+  letter-spacing: 7.68px;
+  font-weight: 200;
+  color: #ed1c24;
+  padding-bottom: 6px;
+}
+.restaurant-content-box h2 {
+  font-size: 2rem;
+  font-weight: 200;
+  padding-bottom: 21px;
+}
+.restaurant-content-box #salt-logo-3 {
+  font-family: "futurak";
+}
+.restaurant-content-box p {
+  letter-spacing: 0.48px;
+  font-weight: 200;
+  color: #b2b2b2;
+  padding-bottom: 10px;
+}
+.restaurant-content-box p i {
+  padding-right: 4px;
+}
+.restaurant-content-box #phone-p {
+  padding-bottom: 50px;
+  font-size: 1rem;
+}
+.restaurant-content-box button {
+  padding: 0.6rem 1.4rem 0.5rem 1.4rem;
+  border: #575757 solid 1px;
+  border-radius: 1.5rem;
+  font-family: "poppins";
+  font-weight: 100;
+  color: #fff;
+  background: #0f0f0f;
+  font-size: 0.88rem;
+}
+.restaurant-content-box button i {
+  border-radius: 0.9rem;
+  background: #fff;
+  padding: 7px 8px 7px 8px;
+  margin-left: 0.6rem;
+  color: #ed1c24;
+  font-size: 1rem;
+}
+/* Restaurant-Franchise-section */
+
+/* Restaurant-Express-Section */
+.restaurant-express {
+  background: #000;
+  height: 81rem;
+  color: #fff;
+}
+.restaurant-express .heading-container {
+  padding-bottom: 2rem;
+}
+
+/* first-Container */
+.express-img-container1 {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 32px;
+}
+.express-img {
+  text-align: center;
+  line-height: 18px;
+}
+.express-img img {
+  width: 350px;
+  height: 250px;
+}
+.express-img h4 {
+  padding: 24px 0 8px 0;
+  letter-spacing: 5.76px;
+  font-weight: 200;
+  color: #ed1c24;
+  font-size: 12px;
+}
+.express-img h3 {
+  padding-bottom: 18px;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.express-img #salt-logo-4 {
+  font-family: "futurak";
+}
+.express-img p {
+  padding-bottom: 12px;
+  font-weight: 200;
+  color: #b2b2b2;
+  font-size: 15px;
+}
+.express-img p i {
+  font-size: 16px;
+}
+.express-img #phone-p {
+  padding-bottom: 16px;
+  font-weight: 200;
+  color: #b2b2b2;
+  font-size: 15px;
+}
+.express-img #phone-p i {
+  font-size: 16px;
+}
+.express-img button {
+  padding: 0.6rem 1.4rem 0.5rem 1.4rem;
+  border: #575757 solid 1px;
+  border-radius: 1.5rem;
+  font-family: "poppins";
+  font-weight: 100;
+  color: #fff;
+  background: #0f0f0f;
+  font-size: 0.88rem;
+}
+.express-img button i {
+  border-radius: 0.9rem;
+  background: #fff;
+  padding: 7px 8px 7px 8px;
+  margin-left: 0.6rem;
+  color: #ed1c24;
+  font-size: 1rem;
+  font-weight: 700;
+}
+/* first-Container */
+
+/* Second-Container */
+.express-img-container2 {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+/* Restaurant-Express-Section */
+
+/* Restaurant-Village-section */
+.village-salt {
+  height: 44rem;
+  background: #0f0f0f;
+  color: #fff;
+}
+.village-salt .heading-container {
+  padding-bottom: 2rem;
+}
+.village-img {
+  display: flex;
+  gap: 2rem;
+  padding-bottom: 32px;
+}
+.village-img img {
+  width: 46.5rem;
+  height: 26.8rem;
+}
+.village-content {
+  padding-top: 79px;
+  line-height: normal;
+}
+.village-content h4 {
+  padding: 24px 0 8px 0;
+  letter-spacing: 7.68px;
+  font-weight: 200;
+  color: #ed1c24;
+  font-size: 16px;
+}
+.village-content h3 {
+  padding-bottom: 25px;
+  font-size: 32px;
+  font-weight: 200;
+}
+.village-content #salt-logo-5 {
+  font-family: "futurak";
+}
+.village-content p {
+  padding-bottom: 12px;
+  font-weight: 200;
+  color: #b2b2b2;
+  font-size: 16px;
+  letter-spacing: 0.48px;
+}
+.village-content p i {
+  font-size: 16px;
+}
+.village-content #phone-p {
+  padding-bottom: 16px;
+  font-weight: 200;
+  color: #b2b2b2;
+  font-size: 16px;
+  letter-spacing: 0.48px;
+}
+.village-content #phone-p i {
+  font-size: 16px;
+}
+.village-content button {
+  padding: 0.6rem 1.4rem 0.5rem 1.4rem;
+  border: #575757 solid 1px;
+  border-radius: 1.5rem;
+  font-family: "poppins";
+  font-weight: 100;
+  color: #fff;
+  background: #28a745;
+  font-size: 0.88rem;
+  margin-top: 0.8rem;
+}
+.village-content button i {
+  border-radius: 0.9rem;
+  background: #fff;
+  padding: 7px 8px 7px 8px;
+  margin-left: 0.6rem;
+  color: #28a745;
+  font-size: 1rem;
+  font-weight: 700;
+}
+/* Restaurant-Village-section */
+
+/* Restaurant-opening-soon-section */
+.soon-salt {
+  height: 50rem;
+  background: #000;
+  color: #fff;
+}
+.soon-salt .heading-container {
+  padding-bottom: 1.5rem;
+}
+.soon-salt .heading-container #op-soon {
+  font-size: 1.5rem;
+  display: inline-block;
+}
+.soon-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.9rem;
+  padding: 0 12.875rem 4.4rem 12.8125rem;
+}
+.soon-box {
+  border: #4d4d4d solid 1px;
+  border-radius: 0.3rem;
+  width: 350px;
+  height: 235px;
+  text-align: center;
+  background: #fff;
+  color: #000;
+}
+.marker-img {
+  padding: 25px 0 23px 0;
+}
+.soon-box h5 {
+  padding-bottom: 10px;
+  font-size: 10px;
+  font-weight: 200;
+  letter-spacing: 4.8px;
+  color: #ed1c32;
+}
+.soon-box h4 {
+  padding-bottom: 4px;
+  font-size: 25px;
+  font-family: "futurablack";
+}
+.soon-box p {
+  font-size: 21px;
+  font-family: "futurablack";
+  padding-bottom: 4px;
+}
+#soon-font-weight {
+  font-weight: 200;
+  font-size: 21px;
+}
+/* Restaurant-opening-soon-section */
+
+/* Restaurant-social-feed-section */
+.social-salt {
+  height: 27.3rem;
+  background: #000;
+  color: #fff;
+}
+.social-container h3 {
+  font-size: 32px;
+  font-family: "butler";
+  text-align: center;
+  color: #fff;
+  padding-bottom: 2.4rem;
+}
+.social-img {
+  display: flex;
+  gap: 20px;
+  padding: 0 20px 0 10px;
+}
+.social-img img {
+  width: 284px;
+  height: 284px;
+}
+/* Restaurant-social-feed-section */
+
+/* footer-section-starts */
+.footer-section {
+  height: 455px;
+  background: #0f0f0f;
+  padding: 70px 190px 0 190px;
+}
+.footer-data-box {
+  display: flex;
+  gap: 55px;
+}
+.footer-logo img {
+  padding-bottom: 24px;
+}
+.footer-detail-box-1 p {
+  color: #b2b2b2;
+  font-weight: 100;
+  line-height: 21px;
+  padding-bottom: 1.5rem;
+}
+.useful-links a {
+  text-decoration: none;
+  color: #b2b2b2;
+  padding-right: 1rem;
+  line-height: 24px;
+  font-weight: 100;
+}
+
+.footer-deatail-box-2 {
+  padding-right: 5rem;
+  font-weight: 100;
+}
+.footer-collapse-icons {
+  color: #fff;
+  padding-bottom: 24px;
+  font-weight: 100;
+  font-family: "butler";
+}
+.footer-deatail-box-2 ul li {
+  list-style: none;
+  padding-bottom: 1rem;
+}
+.footer-deatail-box-2 ul li a {
+  text-decoration: none;
+  color: #b2b2b2;
+}
+
+.contact-list ul li {
+  list-style: none;
+  padding-bottom: 1rem;
+  font-weight: 100;
+}
+.contact-list ul li a {
+  text-decoration: none;
+  color: #b2b2b2;
+}
+
+.footer-detail-box-3 {
+  padding-right: 2.5rem;
+}
+.footer-social-links {
+  padding-bottom: 24px;
+}
+.footer-social-links a i {
+  color: #fff;
+  padding: 12px 12px;
+  background: #ed1c24;
+  border: transparent solid 1px;
+  border-radius: 2rem;
+}
+.footer-social-links a {
+  padding: 1px;
+}
+#facebook-icon {
+  padding: 12px 15px;
+}
+
+.modcontinent-panel ul li {
+  list-style: none;
+  padding-bottom: 13px;
+}
+
+.footer-last-box {
+  border-top: #222222 solid 1px;
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+}
+.left-text-box p {
+  color: #b2b2b2;
+  margin-left: 2rem;
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 0.42px;
+}
+.left-text-box span {
+  color: #fff;
+}
+.right-text-box a {
+  color: #b2b2b2;
+  text-decoration: none;
+  font-weight: 50;
+  font-size: 14px;
+  letter-spacing: 0.42px;
+}
+.footer-last-box p {
+  padding-top: 7px;
+}
